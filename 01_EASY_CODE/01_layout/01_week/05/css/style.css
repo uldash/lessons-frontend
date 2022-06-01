@@ -1,0 +1,44 @@
+/* .list li:last-child a {
+    color: red;
+}
+
+.list li:first-child a {
+    color: orange;
+}
+
+.list li:nth-child(3) a {
+    color: aqua;
+} */
+
+/* .list li:nth-child(odd) a {
+    color: aqua;
+} */
+
+/* .list a:hover {
+    color: brown
+} */
+
+/* .list li:not(.not_example) a {
+    color: orange;
+} */
+
+.list {
+    list-style: none;
+}
+
+/* .list li::before {
+    content: 'Text';
+}
+
+.list li::after {
+    content: 'Text';
+} */
+
+.list li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    margin-right: 10px;
+}

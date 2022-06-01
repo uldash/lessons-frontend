@@ -1,0 +1,30 @@
+h1 {
+    color: orange;
+}
+
+p mark {
+    background-color: aqua;
+}
+
+mark {
+    background-color: blueviolet;
+    font-size: 22px;
+}
+
+.text {
+    text-transform: uppercase;
+    color: gray !important;
+    font-weight: bold;
+}
+
+.text_large {
+    width: 700px;
+}
+
+.text_small {
+    width: 300px;
+}
+
+#text {
+    color: brown;
+}
