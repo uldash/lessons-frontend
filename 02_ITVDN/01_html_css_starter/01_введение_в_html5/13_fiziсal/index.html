@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теги физической разметки</title>
+</head>
+<body>
+    <p>
+        <b>&lt;b&gt; - жирный текст</b>
+    </p>
+    <p>
+        &lt;bdi&gt; - указывает фрагмент текста который должен быть изолирован от изменения направления текста
+        <br>
+        <span dir="rtl">1 2 3 4 5 6</span>
+        <br>
+        <span dir="ltr">1 2 3 4 5 6</span>
+        <br>
+        <span dir="rtl"><bdi>1 2 3 4 5 6</bdi></span>
+    </p>
+    <p>
+        &lt;bdo&gt; - устанавливает направление вывода текста
+    <p>Looks like this in Hebrew: <span dir="rtl">1 2 3 4 5 6</span></p>
+
+    <p>In the computer's memory, this is stored as <bdo dir="ltr">1 2 3 4 5</bdo></p>
+    </p>
+    <p>
+        <i>&lt;i&gt; - курсивный текст</i>
+    </p>
+    <p>
+        <s>&lt;s&gt; - перечеркнутый текст</s>
+    </p>
+    <p>
+        &lt;small&gt; - делает на одну условную единицу меньше
+        <br>
+        1 2 3 <small>4 5 6 <small>7 8 9</small></small>
+    </p>
+    <p>
+        &lt;big&gt; - делает на одну условную единицу больше
+        <br>
+        1 2 3 <big>4 5 6 <big>7 8 9</big></big>
+    </p>
+    <p>
+        &lt;sup&gt; - верхний индекс
+        <br>
+        1 2 3 <sup>4 5 6</sup>
+    </p>
+    <p>
+        &lt;sub&gt; - нижний индекс
+        <br>
+        1 2 3 <sub>4 5 6</sub>
+    </p>
+    <p>
+        &lt;meter&gt; - используется для вывода значения в некотором известном диапазоне
+        <br>
+        <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">
+            at 50/100
+        </meter>
+        <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="10">
+            at 10/100
+        </meter>
+        <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="90">
+            at 90/100
+        </meter>
+    </p>
+    <p>
+        &lt;progress&gt; - используется для отображения процесса завершенности
+        <br>
+        <progress id="file" max="100" value="70"> 70% </progress>
+        <progress id="file" max="100" value="10"> 10% </progress>
+        <progress id="file" max="100" value="90"> 90% </progress>
+    </p>
+</body>
+</html>
