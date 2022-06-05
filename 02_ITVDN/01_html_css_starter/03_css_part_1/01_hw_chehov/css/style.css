@@ -1,0 +1,25 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10.5px;
+}
+
+.notation {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 21px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.under_line {
+    text-decoration: underline;
+}
