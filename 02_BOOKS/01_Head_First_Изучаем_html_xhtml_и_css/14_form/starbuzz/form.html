@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbuzz Bean Machine</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Starbuzz Bean Machine</h1>
+    <h2>Заполните следующую форму и нажмите кнопку «Заказать сейчас», чтобы оформить заказ</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Order details</legend>
+            <div class="table_row">
+                <label id="beans">Выберите кофе:</label>
+                <select name="beans" id="beans">
+                    <option value="Смесь">Домашняя смесь</option>
+                    <option value="Боливия">Боливия</option>
+                    <option value="Гватемала">Гватемала</option>
+                    <option value="Кения">Кения</option>
+                </select>
+            </div>
+            <div class="table_row">
+                <label>Тип: </label>
+                <p>
+                    <input type="radio" id="whole_beantype" name="beantype" value="зерна">
+                    <label for="whole_beantype">Кофе в зернах</label><br>
+                    <input type="radio" id="ground_beantype" name="beantype" value="молотый" checked="checked">
+                    <label for="whole_beantype">Кофе в зернах</label>
+                </p>
+            </div>
+            <div class="table_row">
+                <label for="bags">Количество пакетиков:</label>
+                <input type="number" name="bags" id="bags" min="1" max="10">
+            </div>
+            <div class="table_row">
+                <label for="date">Доставить к указанной дате:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="table_row">
+                <label>Дополнительные услуги:</label>
+                <p>
+                    <input type="checkbox" id="giftwrap_extras" name="extras[]" value="подарочная упаковка"> <label
+                        for="giftwrap_extras">Подарочная
+                        упаковка</label> <br>
+                    <input type="checkbox" id="catalog_extras" name="extras[]" value="каталог" checked="checked"> <label
+                        for="catalog_extras">Доставка каталога вместе с
+                        заказом</label> <br>
+                </p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Ship to</legend>
+            <div class="table_row">
+                <p class="heading">
+                    Доставить по адресу:
+                </p>
+            </div>
+            <div class="table_row">
+                <label for="name">Имя:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="table_row">
+                <label for="address">Адрес:</label>
+                <input type="text" name="address" id="address">
+            </div>
+            <div class="table_row">
+                <label for="city">Город:</label>
+                <input type="text" name="city" id="city">
+            </div>
+            <div class="table_row">
+                <label for="state">Страна:</label>
+                <input type="text" name="state" id="state">
+            </div>
+            <div class="table_row">
+                <label for="zip">Почтовый индекс:</label>
+                <input type="text" name="zip" id="zip">
+            </div>
+            <div class="table_row">
+                <label for="phone">Телефон:</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="table_row">
+                <label for="comments">Комментарии клиентов:</label>
+                <textarea name="comments" id="comments" placeholder="Отличный кофе"></textarea>
+            </div>
+            <div class="table_row">
+                <label></label>
+                <input type="submit" value="Заказать сейчас">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

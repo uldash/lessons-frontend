@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form action="http://wickedlysmart.com/hfhtmlcss/contest.php" method="post">
+        <p>
+            Просто введите свое имя (и нажмите кнопку Отправить), чтобы принять участие в конкурсе: <br>
+            Имя: <input type="text" name="firstname" value=""> <br>
+            Фамилия: <input type="text" name="lastname" value=""> <br>
+            <input type="submit">
+        </p>
+    </form>
+    <hr>
+    <form action="#" method="post">
+        <p>
+            Элемент &lt;input&gt; типа radio создает переключатели, которые являются взаимоисключающими. Это похоже на
+            старые
+            переключатели в машинах: если вы выбираете одно положение, то все остальные становятся неактивными.
+            <input type="radio" name="hotornot" value="горячо" id="hot" />
+            <label for="hot">Гоячо</label>
+            <input type="radio" name="hotornot" value="нет" id="no" />
+            <label for="no">Нет</label>
+        </p>
+    </form>
+    <form action="#" method="post">
+        <p>
+            Элемент &lt;input&gt; типа checkbox создает флажки, которые могут быть либо установленными, либо снятыми. Вы
+            можете использовать сразу несколько флажков, при этом можно установить любое их количество.
+            <br>
+            <input type="checkbox" name="spice" value="соль" id="salt" />
+            <label for="salt">Соль</label> <br>
+            <input type="checkbox" name="spice" value="перец" id="pepper" />
+            <label for="pepper">Перец</label> <br>
+            <input type="checkbox" name="spice" value="чеснок" id="garlic" />
+            <label for="garlic">Чеснок</label> <br>
+        </p>
+    </form>
+    <hr>
+    <form action="#" method="post">
+        <p>
+            Элемент &lt;textarea&gt; создает многострочное текстовое поле для ввода данных. Если вы вводите больше
+            текста, чем может вме ститься в одну строку, то справа появляется полоса для прокрутки.
+            <br>
+            <textarea name="comments" id="" cols="15" rows="18">
+                Текст для примера
+            </textarea>
+        </p>
+    </form>
+    <hr>
+    <form action="#" method="post">
+        Элемент &lt;select&gt; создает на веб-странице раскрывающийся список. Он предоставляет возможность выбирать
+        предлагаемые варианты ответов.Элемент &lt;select&gt; работает в паре с элементом &lt;option&gt;, создающим меню.
+        <br>
+        <select name="characters">
+            <option value="Баккару">Баккару Банзай</option>
+            <option value="Томми">Чудесный Томми</option>
+            <option value="Пенни">Пенни Придди</option>
+            <option value="Джерси">Нью-Джерси</option>
+            <option value="Джон">Джон Паркер</option>
+        </select>
+    </form>
+    <hr>
+    <form action="#" method="post">
+        <p>
+            Чтобы создать меню, используйте элемент &lt;option&gt; в паре с элементом &lt;select&gt;. Задавайте элемент
+            &lt;option&gt; для каждого пункта меню.
+            <br>
+            <select name="characters">
+                <option value="Баккару">Баккару Банзай</option>
+                <option value="Томми">Чудесный Томми</option>
+                <option value="Пенни">Пенни Придди</option>
+                <option value="Джерси">Нью-Джерси</option>
+                <option value="Джон">Джон Паркер</option>
+            </select>
+        </p>
+    </form>
+    <hr>
+    <h2>Элементы формы HTML5</h2>
+    <form action="#" method="post">
+        <p>
+            Элемент &lt;input&gt; типа number вводит ограничение, согласно которому пользователи смогут вводить в
+            соответствующее поле только числа. Вы можете задать минимальное и максимальное число, которое можно будет
+            ввести, посредством опциональных атрибутов.
+            <br>
+            <input type="number" min="0" max="20" value="4">
+        </p>
+    </form>
+    <hr>
+    <form action="#" method="post">
+        <p>
+            Элемент &lt;input&gt; типа range аналогичен элементу &lt;input&gt; типа number, за исключени ем того, что он
+            обеспечивает отображение ползунка вместо поля ввода.
+            <br>
+            <input type="range" min="0" max="20" value="4" step="5">
+        </p>
+    </form>
+    <hr>
+    <form action="#" method="post">
+        <p>
+            Используйте элемент &lt;input&gt; типа color для задания цвета. При щелчке мышью на соответствующем элементе
+            управления на экране появится палитра цветов, из которой вы сможете выбрать требуемый цвет, вместо того
+            чтобы вручную вводить его название или значение.
+            <input type="color" value="#00d5c3">
+        </p>
+    </form>
+    <br>
+    <hr>
+    <form action="#" method="post">
+        <p>
+            Используйте элемент &lt;input&gt; типа date для задания дат,применяя такой элемент управления, как
+            календарь. Данный элемент управления генерирует строку допусти мого формата даты для отправки серверному
+            сценарию.
+            <input type="date">
+        </p>
+    </form>
+    <br>
+</body>
+</html>

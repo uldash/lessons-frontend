@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Emblema One";
+  src: url("../assets/fnt/EmblemaOne-Regular.woff"),
+    url("../assets/fnt/EmblemaOne-Regular.ttf");
+}
+
+body {
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  font-size: small;
+}
+
+h1,
+h2 {
+  color: #cc6600;
+  border-bottom: thin dotted #888888;
+}
+
+h1 {
+  font-family: "Emblema One", sans-serif;
+  font-size: 220%;
+}
+
+h2 {
+  font-size: 130%;
+  font-weight: normal;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+table {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid black;
+  caption-side: bottom;
+  /* border-spacing: 0; */
+  border-collapse: collapse;
+}
+
+/* table>tbody>tr:nth-child(even) {
+  background-color: #fcba7a;
+} */
+
+.cell_color {
+  background-color: #fcba7a;
+}
+
+th {
+  background-color: #cc6600;
+}
+
+td,
+th {
+  border: thin dotted gray;
+  padding: 5px;
+}
+
+caption {
+  font-style: italic;
+  padding-top: 8px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text_right {
+  text-align: right;
+}
+
+table table th {
+  background-color: white;
+}
+
+table table tr:nth-child(1) {
+  background-color: hotpink;
+}
+
+table table tr:nth-child(2) {
+  background-color: cornflowerblue;
+}
+
+li {
+  list-style-image: url(../assets/images/backpack.gif);
+  padding-top: 5px;
+  margin-left: 20px;
+}

@@ -1,0 +1,43 @@
+body {
+    background: #efe5d0 url("../assets/img/background.gif");
+    margin: 20px;
+}
+
+form {
+    display: table;
+    padding: 10px;
+    border: thin dotted #7e7e7e;
+    background-color: #e1ceb8;
+}
+
+div.table_row {
+    display: table-row;
+}
+
+div.table_row>p,
+div.table_row>label,
+div.table_row>input {
+    display: table-cell;
+    vertical-align: top;
+    padding: 3px;
+}
+
+div.table_row label:first-child {
+    text-align: right;
+}
+
+
+form textarea {
+    display: table-cell;
+    width: 500px;
+    height: 200px;
+
+}
+
+legend {
+    font-weight: bold;
+}
+
+p.heading {
+    font-weight: bold;
+}
