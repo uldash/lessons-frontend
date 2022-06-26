@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+</head>
+<body>
+    <h2>Green Planet</h2>
+    <p id="greenplanet">All is well <span>WOOO</span></p>
+    <h2>Red Planet</h2>
+    <p id="redlanet">Nothing to report</p>
+    <h2>Blue Planet</h2>
+    <p id="blueplanet">All system A-OK</p>
+    <p>
+        <button onclick="aaa()">Click me</button>
+    </p>
+    <script>
+        function aaa() {
+            var new_text = "Red Alert: hit by phaser fire!";
+            var planet = document.getElementById("greenplanet");
+            alert(planet.innerHTML)
+            planet.innerHTML = new_text;
+        }
+    </script>
+</body>
+</html>
