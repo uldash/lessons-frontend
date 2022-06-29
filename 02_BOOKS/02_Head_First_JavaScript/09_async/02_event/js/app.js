@@ -14,7 +14,7 @@ function showAnswer(eventObj) {
     var image = eventObj.target;
     if (image.src.slice(-8) === "blur.jpg") {
         image.setAttribute("src", "./img/" + image.id + ".jpg");
-        setTimeout(()=>{image.setAttribute("src", "./img/" + image.id + "blur.jpg");}, 5000)
+        setTimeout(()=>{image.setAttribute("src", "./img/" + image.id + "blur.jpg");}, 3000, image);
     } else {
         image.setAttribute("src", "./img/" + image.id + "blur.jpg");
     }
