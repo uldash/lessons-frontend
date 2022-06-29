@@ -168,7 +168,7 @@ function handleFireButton() {
 }
 function handleKeyPress(e) {
     var fireButton = document.getElementById("fireButton");
-    if (e.keyCode === 13) {
+    if (e.key === 'Enter') {
         fireButton.click();
         return false;
     }
